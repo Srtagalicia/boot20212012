@@ -11,7 +11,9 @@ console.log(randomNumber);
 
 // Iteration 3 - Create a function that returns an array with the arguments as items.
 
-// Iteration 4 - 
+// Iteration 4 - Create a function that returns a certain number of prime numbers.
+
+
 
 // Iteration 5 - Create a function to validate an ID.
 
@@ -19,11 +21,11 @@ function CheckId(id) {
     let regex =  /^(\d{8})([A-Z])$/;
     if(id.value.match(regex)) { 
         alert('Correct')
-    return true;
+        return true;
     }
     else { 
         alert('Wrong...! Try again')
-    return false;
+        return false;
     }
 }
 
@@ -33,13 +35,14 @@ function palindrome(str) {
     let re = /[^A-Za-z0-9]/g;
     str = str.toLowerCase().replace(re, '');
     let len = str.length;
-    for (var i = 0; i < len/2; i++) {
+    for (let i = 0; i < len/2; i++) {
         if (str[i] !== str[len - 1 - i]) {
             return false;
         }
     }
     return true;
-   }
-   palindrome("roma tibi subito motibus ibit amor");
+}
+
+palindrome("roma tibi subito motibus ibit amor");
 
 
