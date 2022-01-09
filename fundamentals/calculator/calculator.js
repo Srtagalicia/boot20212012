@@ -41,7 +41,6 @@ class Calculator {
       }
     
 
-}
 
 
 numButtons.forEach(button => {
